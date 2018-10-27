@@ -1,2 +1,2 @@
 # main
-simple and oldresources.
+simple and old resources.
