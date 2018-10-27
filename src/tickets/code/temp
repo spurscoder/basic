@@ -1,0 +1,482 @@
+
+
+
+
+
+# 3
+    def _time_help(self, between, hour, now, y, m, d1, d2, h1, h2, state):
+        if between:
+            if hour:
+                try:
+                    ti = datetime.datetime(y, m, d1, h1)
+                    ti2 = datetime.datetime(y, m, d1, h2)
+                except ValueError:
+                    self.error = (1, "Sorry,您输入的时间格式有问题。")
+                    return None
+                if (ti - now).days < 0 or (ti - now).days > 60 or ti > ti2:
+                    self.error = (1, "不好意思，我暂时没法查询那个时间的机票信息")
+                    return None
+                time_1, time_2 = [y, m, d1, h1], [y, m, d1, h2]
+                return time_1, time_2
+            else:
+                try:
+                    ti1, ti2 = datetime.datetime(y, m, d1), datetime.datetime(y, m, d2)
+                except ValueError:
+                    self.error = (1, "sorry, 您输入的时间我没有听明白。")
+                    return None
+                if (ti1 - now).days < 0 or (ti1 - now).days > 60 or (ti2 - now).days < 0 or (
+                            ti2 - now).days > 60 or ti1 > ti2:
+                    self.error = (1, "您的输入时间好像有点问题")
+                    return None
+
+                time_1, time_2 = [y, m, d1, 0], [y, m, d2, 23]
+                return time_1, time_2
+        else:
+            if hour:
+                try:
+                    ti = datetime.datetime(y, m, d1, h1)
+                except ValueError:
+                    self.error = (1, "sorry, 您输入的时间我没有听明白。")
+                    return None
+                if (ti - now).days < 0 or (ti - now).days > 60:
+                    self.error = (1, "抱歉，我没听懂您的时间要求")
+                    return None
+
+                if state and state == '前':
+                    time_1, time_2 = [y, m, d1, 0], [y, m, d1, h1]
+                elif state and state == '后':
+                    time_1, time_2 = [y, m, d1, h1], [y, m, d1, 23]
+                else:
+                    time_1, time_2 = [y, m, d1, 0], [y, m, d1, 23]
+                return time_1, time_2
+            else:
+                try:
+                    ti = datetime.datetime(y, m, d1)
+                except ValueError:
+                    self.error = (1, "sorry, 您输入的时间我没有听明白。")
+                    return None
+                if (ti - now).days < 0 or (ti - now).days > 60:
+                    self.error = (1, "抱歉，我没听懂您的时间要求")
+                    return None
+
+                if state and state == '前':  # 减5天
+                    if (ti - now).days > 5:
+                        ti -= datetime.timedelta(5)
+                        time_1, time_2 = [ti.year, ti.month, ti.hour, 0], [y, m, d1, 23]
+                    else:
+                        time_1, time_2 = [now.year, now.month, now.day, now.hour], [y, m, d1, 23]
+                elif state and state == '后':  # 加5天
+                    ti += datetime.timedelta(5)
+                    time_1, time_2 = [y, m, d1, 0], [ti.year, ti.month, ti.day, 23]
+                else:  # 前后几天
+                    if (ti - now).days > 3:
+                        ti1, ti2 = ti - datetime.timedelta(2), ti + datetime.timedelta(2)
+                        time_1, time_2 = [ti1.year, ti1.month, ti1.day, 0], [ti2.year, ti2.month, ti2.day, 23]
+                    else:
+                        ti += datetime.timedelta(3)
+                        time_1, time_2 = [now.year, now.month, now.day, now.hour], [ti.year, ti.month, ti.day, 23]
+                return time_1, time_2
+
+    def _time_help2(self, between, now, y, m, n, h1, h2, state):
+        if between:
+            try:
+                ti1, ti2 = datetime.datetime(y, m, now.day, h1) + datetime.timedelta(n), datetime.datetime(y, m, now.day, h2) + datetime.timedelta(n)
+            except ValueError:
+                self.error = (1, "sorry, 您输入的时间我没有听明白。")
+                return None
+            if n < 0 or n > 60 or ti1 > ti2:
+                self.error = (1, "您的输入时间好像有点问题")
+                return None
+
+            time_1, time_2 = [ti1.year, ti1.month, ti1.day, h1], [ti2.year, ti2.month, ti2.day, h2]
+            return time_1, time_2
+        else:
+            try:
+                ti = datetime.datetime(y, m, now.day, h1) + datetime.timedelta(n)
+            except ValueError:
+                self.error = (1, "sorry, 您输入的时间我没有听明白。")
+                return None
+            if n < 0 or n > 60:
+                self.error = (1, "抱歉，我没听懂您的时间要求")
+                return None
+
+            if state and state == '前':
+                time_1, time_2 = [ti.year, ti.month, ti.day, 0], [ti.year, ti.month, ti.day, h1]
+            elif state and state == '后':
+                time_1, time_2 = [ti.year, ti.month, ti.day, h1], [ti.year, ti.month, ti.day, 23]
+            else:
+                ti_1 = ti - datetime.timedelta(hours=3)
+                ti_2 = ti + datetime.timedelta(hours=3)
+                time_1, time_2 = [ti_1.year, ti_1.month, ti_1.day, ti_1.hour], [ti_2.year, ti_2.month, ti_2.day, ti_2.hour]
+            return time_1, time_2
+
+
+
+
+# 2
+
+        # time1, time2 = [None, None, None, None], [None, None, None, None]
+        # y, y1, y2 = re.findall(r"(\d{4})年", sent), None, None
+        # m, m1, m2 = re.findall(r"(\d{1,2})月", sent), None, None
+        # d, d1, d2 = re.findall(r"(\d{1,2})日[之以]*([前后])*", sent), None, None
+        # if len(y) > 2 or len(m) > 2 or len(d) > 2:
+        #     self.error = (1, "抱歉，您输入的时间有问题。")
+        #     return True
+        # if y or m or d:
+        #     if y:
+        #         if len(y) == 1:
+        #             y1, y2 = int(y[0]), int(y[0])
+        #         else:
+        #             y1, y2 = int(y[0]), int(y[1])
+        #     if m:
+        #         if len(m) == 1:
+        #             m1, m2 = int(m[0]), int(m[0])
+        #         else:
+        #             m1, m2 = int(m[0]), int(m[1])
+        #     if d:
+        #         if len(d) == 1:
+        #             if d[0][1] == '':
+        #                 d1, d2 = int(d[0][0]), int(d[0][0])
+        #             elif d[0][1] == '前':
+        #                 d2 = int(d[0][0])
+        #             else:
+        #                 d1 = int(d[0][0])
+        #         else:
+        #             d1, d2 = int(d[0][0]), int(d[1][0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # ----------------------------
+#
+#         state = re.search(r"([前后])", sent)
+#         state1 = re.search(r"(左右)", sent)
+#
+#         if len(y) > 2 or len(m) > 2 or len(d) > 2 or len(w) > 2 or len(d1) > 2 or int(d2.groups()[0]) > 60:
+#             self.error = (1, "抱歉，您输入的时间有问题。")
+#             return True
+#         if state:
+#             if state.groups()[0] == '前':
+#                 if y:
+#                     time2[0] = int(y[0])
+#                 if m:
+#                     if m[0] == '下':
+#                         time2[1] = now.month + 1
+#                         if time2[1] > 12:
+#                             time2[1] = 1
+#                             time2[0]
+#             else:
+#                 pass
+#         else:
+#             pass
+#
+#         mb = re.search(r"(现在|立刻|马上)", sent)
+#
+# # ----------------------------
+#         mat_9 = re.search(r"下个*月(\d{1,2})日.*?(\d{1,2})[点时].*到(\d{1,2})[点时].*[之]*间", sent)
+#         mat_10 = re.search(r"下个*月(\d{1,2})日.*?(\d{1,2})[点时].*[之以]*([前后])", sent)
+#         mat_10_1 = re.search(r"下个*月(\d{1,2})日.*?(\d{1,2})[点时]", sent)
+#         mat_11 = re.search(r"下个*月(\d{1,2})日.*到(\d{1,2})日.*[之]*间", sent)
+#         mat_12 = re.search(r"下个*月(\d{1,2})日.*[之以]*([前后])", sent)
+#         mat_12_1 = re.search(r"下个*月(\d{1,2})日", sent)
+#         if mat_9:
+#             """下个月 日点点 之间"""
+#             y, d, h1, h2 = now.year, int(mat_9.groups()[0]), int(mat_9.groups()[1]), int(mat_9.groups()[2])
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(True, True, now, y, m, d, None, h1, h2, None)
+#         elif mat_10:
+#             """下个月 日点 之前后"""
+#             y, d, h, state = now.year, int(mat_10.groups()[0]), int(mat_10.groups()[1]), mat_10.groups()[2]
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(False, True, now, y, m, d, None, h, None, state)
+#         elif mat_10_1:
+#             """下个月 日点 空"""
+#             y, d, h, state = now.year, int(mat_10_1.groups()[0]), int(mat_10_1.groups()[1]), None
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(False, True, now, y, m, d, None, h, None, state)
+#         elif mat_11:
+#             """ 下个月 日 之间 """
+#             y, d1, d2 = now.year, int(mat_11.groups()[0]), int(mat_11.groups()[1])
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(True, False, now, y, m, d1, d2, None, None, None)
+#         elif mat_12:
+#             """ 下个月 日 之前后 """
+#             y, d, state = now.year, int(mat_12.groups()[0]), mat_12.groups()[1]
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(False, False, now, y, m, d, None, None, None, state)
+#         elif mat_12_1:
+#             """ 下个月 日 空 """
+#             y, d, state = now.year, int(mat_12_1.groups()[0]), None
+#             m = now.month + 1
+#             if m > 12:
+#                 y, m = y+1, 1
+#             result = self._time_help(False, False, now, y, m, d, None, None, None, state)
+#         if result:
+#             time_1, time_2 = result[0], result[1]
+#         if time_1:
+#             return time_1, time_2
+#
+#         dict_temp, n = {'今天': 0, '明天': 1, '后天': 2, '大后天': 3}, 0
+#         dict_temp1, dict_temp2 = {'今天': 0, '明天': 1, '后天': 2, '大后天': 3}, {'早上': (0, 5), '中午': (0, 12), '上午': (0, 5),
+#                                                                          '下午': (0, 12), '晚上': (0, 19)}
+#         dict_temp3 = {'早上': (5, 23), '中午': (12, 23), '上午': (5, 23), '下午': (19, 23), '晚上': (18, 23)}
+#         mat_13 = re.search(r"(今天|明天|大后天|后天).*?(\d{1,2})[点时].*到(\d{1,2})[点时].*[之]*间", sent)
+#         mat_14 = re.search(r"(今天|明天|大后天|后天).*?(\d{1,2})[点时].*[之以]*([前后])", sent)
+#         mat_14_1 = re.search(r"(今天|明天|大后天|后天).*?(\d{1,2})[点时]", sent)
+#         mat_15_1 = re.search(r"(今天|明天|大后天|后天).*(早上|中午|上午|下午|晚上)[之以]*([前后])", sent)
+#         mat_15 = re.search(r"(今天|明天|大后天|后天).*(早上|中午|上午|下午|晚上)", sent)
+#         if mat_13:
+#             """ 天 点点 之间"""
+#             y, m, da, h1, h2 = now.year, now.month, mat_13.groups()[0], int(mat_13.groups()[1]), int(mat_13.groups()[2])
+#             if da:
+#                 n = dict_temp[da]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_14:
+#             """ 天 点 之前后 """
+#             y, m, da, h, state = now.year, now.month, mat_14.groups()[0], int(mat_14.groups()[1]), mat_14.groups()[2]
+#             if da:
+#                 n = dict_temp[da]
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_14_1:
+#             """ 天 点 空 """
+#             y, m, da, h, state = now.year, now.month, mat_14_1.groups()[0], int(mat_14_1.groups()[1]), None
+#             if da:
+#                 n = dict_temp[da]
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_15_1:
+#             """ 天 半天 之前后"""
+#             y, m, da, ho, state = now.year, now.month, mat_15_1.groups()[0], mat_15_1.groups()[1], mat_15_1.groups()[2]
+#             if da:
+#                 n = dict_temp1[da]
+#             if state == '前':
+#                 h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             else:
+#                 h1, h2 = dict_temp3[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_15:
+#             """ 天 半天 """
+#             y, m, da, ho = now.year, now.month, mat_15.groups()[0], mat_15.groups()[1]
+#             if da:
+#                 n = dict_temp1[da]
+#             h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         if result:
+#             time_1, time_2 = result[0], result[1]
+#         if time_1:
+#             return time_1, time_2
+#
+#         mat_13_1 = re.search(r"(\d{1,2})[点时].*到(\d{1,2})[点时].*[之]*间", sent)
+#         mat_14_1 = re.search(r"(\d{1,2})[点时].*[之以]*([前后])", sent)
+#         mat_14_1_1 = re.search(r"(\d{1,2})[点时]", sent)
+#         mat_15_1_1 = re.search(r"(早上|中午|上午|下午|晚上)[之以]*([前后])", sent)
+#         mat_15_1 = re.search(r"(早上|中午|上午|下午|晚上)", sent)
+#         if mat_13_1:
+#             """ 天 点点 之间"""
+#             y, m, n, h1, h2 = now.year, now.month, 0, int(mat_13_1.groups()[0]), int(mat_13_1.groups()[1])
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_14_1:
+#             """ 天 点 之前后 """
+#             y, m, n, h, state = now.year, now.month, 0, int(mat_14_1.groups()[0]), mat_14_1.groups()[1]
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_14_1_1:
+#             """ 天 点 空 """
+#             y, m, n, h, state = now.year, now.month, 0, int(mat_14_1_1.groups()[0]), None
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_15_1_1:
+#             """ 天 半天 之前后"""
+#             y, m, n, ho, state = now.year, now.month, 0, mat_15_1_1.groups()[0], mat_15_1_1.groups()[1]
+#             if state == '前':
+#                 h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             else:
+#                 h1, h2 = dict_temp3[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_15_1:
+#             """ 天 半天 """
+#             y, m, n, ho = now.year, now.month, 0, mat_15_1.groups()[0]
+#             h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         if result:
+#             time_1, time_2 = result[0], result[1]
+#         if time_1:
+#             return time_1, time_2
+#
+#         mat_16_1 = re.search(r"(今天|明天|大后天|后天).*[之以]*([前后])", sent)
+#         mat_16 = re.search(r"(今天|明天|大后天|后天)", sent)
+#         mat_17 = re.search(r"(\d{1,2})[个]*(天|小时)[之以]*后", sent)
+#         mat_18 = re.search(r"(现在|立刻|马上)", sent)
+#         if mat_16_1:
+#             """ 天 之前后"""
+#             y, m, da, state = now.year, now.month, mat_16_1.groups()[0], mat_16_1.groups()[1]
+#             if da:
+#                 n = dict_temp[da]
+#             result = self._time_help2(True, now, y, m, n, 0, 23, None)
+#             if result:
+#                 time_1, time_2 = result[0], result[1]
+#                 if state == '前':
+#                     time_1 = [now.year, now.month, now.day, now.hour]
+#                 else:
+#                     ti = datetime.datetime(time_2[0], time_2[1], time_2[2], time_2[3]) + datetime.timedelta(5)
+#                     time_1, time_2 = time_2, [ti.year, ti.month, ti.day, ti.hour]
+#             else:
+#                 return None
+#         elif mat_16:
+#             """ 天 """
+#             y, m, da = now.year, now.month, mat_16.groups()[0]
+#             if da:
+#                 n = dict_temp[da]
+#             result = self._time_help2(True, now, y, m, n, 0, 23, None)
+#             if result:
+#                 time_1, time_2 = result[0], result[1]
+#             else:
+#                 return None
+#         elif mat_17:
+#             """ 天/小时 """
+#             y, m, n, ho = now.year, now.month, int(mat_17.groups()[0]), mat_17.groups()[1]
+#             if ho == '天':
+#                 result = self._time_help2(True, now, y, m, n, 0, 23, None)
+#                 if result:
+#                     time_1, time_2 = result[0], result[1]
+#                 else:
+#                     return None
+#             else:
+#                 try:
+#                     ti = datetime.datetime(y, m, now.day, now.hour) + datetime.timedelta(hours=n)
+#                 except ValueError:
+#                     self.error = (1, "抱歉，我没能听懂您说的时间")
+#                     return None
+#                 if (ti - now).days < 0 or (ti - now).days > 60:
+#                     self.error = (1, "抱歉，我没能听懂您说的时间")
+#                     return None
+#                 ti_1 = ti - datetime.timedelta(hours=5)
+#                 ti_2 = ti + datetime.timedelta(hours=5)
+#                 time_1, time_2 = [ti_1.year, ti_1.month, ti_1.day, ti_1.hour], \
+#                                  [ti_2.year, ti_2.month, ti_2.day, ti_2.hour]
+#         elif mat_18:
+#             """ 现在 立刻 马上"""
+#             ti = now + datetime.timedelta(hours=8)
+#             time_1, time_2 = [now.year, now.month, now.day, now.hour], [ti.year, ti.month, ti.day, ti.hour]
+#         if time_1:
+#             return time_1, time_2
+# # 周
+#         mat_13_0 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*?(\d{1,2})[点时].*到(\d{1,2})[点时].*[之]*间", sent)
+#         mat_14_0 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*?(\d{1,2})[点时].*[之以]*([前后])", sent)
+#         mat_14_0_1 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*?(\d{1,2})[点时]", sent)
+#         mat_15_0_1 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*(早上|中午|上午|下午|晚上)[之以]*([前后])", sent)
+#         mat_15_0 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*(早上|中午|上午|下午|晚上)", sent)
+#         if mat_13_0:
+#             """ 天 点点 之间"""
+#             y, m, ne, da, h1, h2 = now.year, now.month, mat_13_0.groups()[0], mat_13_0.groups()[2], \
+#                 int(mat_13_0.groups()[3]), int(mat_13_0.groups()[4])
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_14_0:
+#             """ 天 点 之前后 """
+#             y, m, ne, da, h, state = now.year, now.month, mat_14_0.groups()[0], mat_14_0.groups()[2], int(mat_14_0.groups()[3]), mat_14_0.groups()[4]
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_14_0_1:
+#             """ 天 点 空 """
+#             y, m, ne, da, h, state = now.year, now.month, mat_14_0_1.groups()[0], mat_14_0_1.groups()[2], int(mat_14_0_1.groups()[3]), None
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             result = self._time_help2(False, now, y, m, n, h, None, state)
+#         elif mat_15_0_1:
+#             """ 天 半天 之前后"""
+#             y, m, ne, da, ho, state = now.year, now.month, mat_15_0_1.groups()[0], mat_15_0_1.groups()[2],\
+#                 mat_15_0_1.groups()[3], mat_15_0_1.groups()[4]
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             if state == '前':
+#                 h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             else:
+#                 h1, h2 = dict_temp3[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         elif mat_15_0:
+#             """ 天 半天 """
+#             y, m, ne, da, ho = now.year, now.month, mat_15_0.groups()[0], mat_15_0.groups()[2], mat_15_0.groups()[3]
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             h1, h2 = dict_temp2[ho][0], dict_temp2[ho][1]
+#             result = self._time_help2(True, now, y, m, n, h1, h2, None)
+#         if result:
+#             time_1, time_2 = result[0], result[1]
+#         if time_1:
+#             return time_1, time_2
+#
+#         mat_12_0_1 = re.search(r"(下)*[个]*(星期|周|礼拜)(.).*[之以]*([前后])", sent)
+#         mat_12_0_1_1 = re.search(r"(下)*[个]*(星期|周|礼拜)(.)", sent)
+#         if mat_12_0_1:
+#             """ 天 之前后 """
+#             y, m, ne, da, state = now.year, now.month, mat_16_1.groups()[0], mat_16_1.groups()[2], mat_12_0_1.groups()[3]
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             result = self._time_help2(True, now, y, m, n, 0, 23, None)
+#             if result:
+#                 time_1, time_2 = result[0], result[1]
+#                 if state == '前':
+#                     time_1 = [now.year, now.month, now.day, now.hour]
+#                 else:
+#                     ti = datetime.datetime(time_2[0], time_2[1], time_2[2], time_2[3]) + datetime.timedelta(5)
+#                     time_1, time_2 = time_2, [ti.year, ti.month, ti.day, ti.hour]
+#             else:
+#                 return None
+#         elif mat_12_0_1_1:
+#             """ 天 """
+#             y, m, ne, da = now.year, now.month, mat_12_0_1_1.groups()[0], mat_12_0_1_1.groups()[2]
+#             if ne:
+#                 n = time_map[da]
+#             else:
+#                 n = time_map1[da]
+#             result = self._time_help2(True, now, y, m, n, 0, 23, None)
+#             if result:
+#                 time_1, time_2 = result[0], result[1]
+#             else:
+#                 return None
+#
+#         if time_1:
+#             return time_1, time_2
+#         else:
+#             if 'nt' in self.postags:
+#                 self.error = (1, '不好意思，我没听明白您的时间要求。')
+#             return None

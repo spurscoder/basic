@@ -1,0 +1,49 @@
+API 说明
+    1. url: http://127.0.0.1:8080/speechprocessing
+    2. type: post
+    3. 请求参数：body:json{
+            'speech': '12月1号武汉到福州'
+        }
+    4. 响应参数：response：json{
+            'total':  15,   # 表示航班数(int)
+            'message': "abcd..." # 以备不时之需
+            'speech':{      # 解析信息
+                'answer': '为您查到一下机票信息', # 语音回答
+                # 以下为分析参数
+                'sTime': [2017, 12, 12, 15] # 查询开始时间，[年月日时]
+                'dTime': [2017, 12, 15, 16] # 查询截止时间，[年月日时]
+                'sCity': '武汉'   # 出发地
+                'dCity': '福州'   # 目的地
+                'nTickets': 1,    # 机票数
+                'class': '头等舱', # 舱位
+                'company': '国航', # 航空公司
+                'flight_type': '波音737', # 机型
+                'flight_price': [0, 1000], # 0-1000元
+                'discount': 85, # 折扣, 八五折 (int)
+                'price_flag': True/False, # True:最低价, False:最高价
+                'time_flag': True/False, # True:最早, False:最晚
+            }
+            'flights': [        # 航班信息，是一个list
+                {
+                    number: 0,
+                    dpt:        以下见之前的文档。同flightInfo节点下的内容
+                    arr:
+                    dptAirport:
+                    ......
+                },
+
+                {
+                    number: 1,
+                    dpt:
+                    arr:
+                    ......
+                }
+
+                {
+                    ......
+                }
+
+                ......
+
+                ]
+        }

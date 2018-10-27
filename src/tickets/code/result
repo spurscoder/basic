@@ -1,0 +1,1230 @@
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	中午	十二时	之前
+nt	nt	nt	nd
+
+test	1
+ws	m
+
+订	一	张	北京	到	广州	的	机票
+v	m	q	ns	v	ns	u	n
+
+下个月	四日	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+下个月	三日	的
+nt	nt	u
+
+下个月	三日	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+下个月	四日	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+下个月	30日	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+订	一	张	北京	到	天津	的	机票
+v	m	q	ns	v	ns	u	n
+
+下个月	四日	的
+nt	nt	u
+
+下个月	四日	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+订	一	张	北京	到	天津	的	机票
+v	m	q	ns	v	ns	u	n
+
+下个月	四日	的
+nt	nt	u
+
+订	一	张	北京	到	天津	的	机票
+v	m	q	ns	v	ns	u	n
+
+下个月	三日	的
+nt	nt	u
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	中午	十二时
+nt	nt	nt
+
+订	一	张	去	天津	的	机票
+v	m	q	v	ns	u	n
+
+下个月	三日
+nt	nt
+
+下个月	四日
+nt	nt
+
+下个月	五日
+nt	nt
+
+订	一	张	飞	天津	的	机票
+v	m	q	v	ns	u	n
+
+下个月	三日
+nt	nt
+
+下个月	四日
+nt	nt
+
+下个月	五日
+nt	nt
+
+下个月	六日
+nt	nt
+
+下个月	七日
+nt	nt
+
+下个月	十日	到	十一	之间	的
+nt	nt	v	m	nd	u
+
+你好	，	我	是	你	老师
+i	wp	r	v	r	n
+
+搞	一	张	大后天	上午	从	北京	到	上海	的	经济舱	，	不	要	国航	的
+v	m	q	nt	nt	p	ns	p	ns	u	n	wp	d	v	nh	u
+
+搞	一	张	大后天	上午	从	北京	到	上海	的	经济舱	，	不	要	国航	的
+v	m	q	nt	nt	p	ns	p	ns	u	n	wp	d	v	nh	u
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	明天	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+最	便宜	的	多少	钱
+d	a	u	r	n
+
+有	没	有	200	块钱	以下	的
+v	d	v	m	q	nd	u
+
+有	没	有	1500	以下	的
+v	d	v	m	nd	u
+
+明天	下午	飞	上海
+nt	nt	v	ns
+
+我	要	一千五百	块	钱	以下	的
+r	v	m	q	n	nd	u
+
+明天	下午	飞	上海
+nt	nt	v	ns
+
+我	要	1500	块钱	以下	的
+r	v	m	q	nd	u
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+南航	的
+nh	u
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	明天	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+搞	一	张	大后天	上午	从	北京	到	上海	的	经济舱	，	不	要	国航	的
+v	m	q	nt	nt	p	ns	p	ns	u	n	wp	d	v	nh	u
+
+搞	一	张	大后天	上午	从	北京	到	上海	的	经济舱	，	不	要	国航	的
+v	m	q	nt	nt	p	ns	p	ns	u	n	wp	d	v	nh	u
+
+搞	一	张	大后天	上午	从	北京	到	上海	的	经济舱	，	不	要	国航	的
+v	m	q	nt	nt	p	ns	p	ns	u	n	wp	d	v	nh	u
+
+cleasr
+ws
+
+能	不	能	帮	我	搞	两	张	到	上海	的	机票	，	我	想	明天	下午	走	，	最好	是	大飞机	，	最好	是	南航	的
+v	d	v	v	r	v	m	q	v	ns	u	n	wp	r	v	nt	nt	v	wp	d	v	n	wp	d	v	nh	u
+
+帮	我	订	一	张	票
+v	r	v	m	q	n
+
+明天	中午	十二时	到	下午	13时	的
+nt	nt	nt	p	nt	nt	u
+
+天津
+ns
+
+下午	的
+nt	u
+
+不要	经济舱
+d	n
+
+不要	公务舱	和	商务舱
+d	n	c	n
+
+不要	高端	经济舱
+d	a	n
+
+重新	订票
+d	v
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+公务舱
+n
+
+经济舱
+n
+
+公务舱
+n
+
+经济舱
+n
+
+商务舱
+n
+
+商务舱
+n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	公务舱
+d	n
+
+不要	经济舱	和	商务舱
+d	n	c	n
+
+不要	高端	经济	从
+d	b	n	p
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱
+d	n
+
+不要	高端	经济舱
+d	a	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱
+d	n
+
+不要	高端	经济舱
+d	a	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱
+d	n
+
+不要	高端	经济舱
+d	a	n
+
+商务舱
+n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+公务舱
+n
+
+经济舱
+n
+
+公务舱
+n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+公务舱
+n
+
+高端	经济舱
+n	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	商务舱	，	要	公务舱
+d	n	c	n	wp	v	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	高端	经济舱
+d	n	c	n	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	商务舱
+d	n	c	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	商务舱
+d	n	c	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	商务舱
+d	n	c	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票
+v	r	v	m	q	nt	nt	v	ns	u	n
+
+不要	经济舱	和	商务舱
+d	n	c	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票	，	不要	经济舱	和	商务舱	，	要	公务舱
+v	r	v	m	q	nt	nt	v	ns	u	n	wp	d	n	c	n	wp	v	n
+
+帮	我	订	一	张	明天	下午	去	天津	的	机票	，	不要	经济舱	和	商务舱	，	不要	公务舱
+v	r	v	m	q	nt	nt	v	ns	u	n	wp	d	n	c	n	wp	d	n
+
+帮	我	订	一	张	北京	到	上海	的	经济舱	和	商务舱
+v	r	v	m	q	ns	v	ns	u	n	c	n
+
+帮	我	订	一	张	北京	到	上海	的	经济舱	和	商务舱	，	不要	经济舱
+v	r	v	m	q	ns	v	ns	u	n	c	n	wp	d	n
+
+订	一	张	北京	到	上海	的	机票
+v	m	q	ns	v	ns	u	n
+
+经济舱
+n
+
+不要	经济舱
+d	n
+
+经济舱	和	商务舱
+n	c	n
+
+不要	经济舱
+d	n
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	明天	，	不	要	国航	的	，	不要	经济舱
+v	r	v	m	q	ns	v	ns	u	n	wp	nt	wp	d	v	nh	u	wp	d	n
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	明天	，	不	要	国航	的	，	不要	经济舱
+v	r	v	m	q	ns	v	ns	u	n	wp	nt	wp	d	v	nh	u	wp	d	n
+
+帮	我	订	一	张	北京	到	上海	的	飞机票	，	不	要	国航	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	v	nh	u
+
+帮	我	订	一	张	北京	到	上海	的	飞机票	，	不	要	国航	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	v	nh	u
+
+不要	川航	和	海航	的
+d	nh	c	nh	u
+
+帮	我	订	一	张	北京	到	上海	的	飞机票	，	不	要	国航	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	v	nh	u
+
+帮	我	订	一	张	北京	到	上海	的	飞机票	，	不	要	国航	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	v	nh	u
+
+不要	海航	和	川航	的
+d	nh	c	nh	u
+
+帮	我	订	一	张	北京	到	上海	的	飞机票	，	不	要	国航	的	，	不要	海航	的	，	要	深圳航空	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	v	nh	u	wp	d	nh	u	wp	v	nh	u
+
+oer
+ws
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+
+
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+广州	到	上海
+ns	v	ns
+
+从	上海	出发
+p	ns	v
+
+从	天津	出发
+p	ns	v
+
+广州
+ns
+
+我	想	订	一	张	北京	到	广州	的	机票	，	不	去	广州	了	，	去	天津	的
+r	v	v	m	q	ns	v	ns	u	n	wp	d	v	ns	u	wp	v	ns	u
+
+我	想	订	一	张	北京	到	天津	的	机票	，	不要	今天	的	，	要	明天	的	，	不要	去	天津	了	，	我	想	去	上海	了	，	不要	经济舱
+r	v	v	m	q	ns	v	ns	u	n	wp	d	nt	u	wp	v	nt	u	wp	d	v	ns	u	wp	r	v	v	ns	u	wp	d	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+不	要	国航	的	，	不要	海航	的
+d	v	nh	u	wp	d	nh	u
+
+不要	长龙航空	，	不要	东航	的
+d	nh	wp	d	nh	u
+
+帮	我	订	一	张	2017年	12月	30日	到	2018年	1月	二日	的	机票
+v	r	v	m	q	nt	nt	nt	p	nt	nt	nt	u	n
+
+广州	到	天津
+ns	v	ns
+
+从	北京	到	上海	的
+p	ns	p	ns	u
+
+订	一	张	北京	到	上海	12月	30日	的	机票
+v	m	q	ns	v	ns	nt	nt	u	n
+
+订	一	张	北京	到	上海	12月	30日	的	机票
+v	m	q	ns	v	ns	nt	nt	u	n
+
+订	一	张	北京	到	上海	12月	30日	的	机票
+v	m	q	ns	v	ns	nt	nt	u	n
+
+订	一	张	北京	到	上海	12月	30日	的	机票
+v	m	q	ns	v	ns	nt	nt	u	n
+
+帮	我	订	一	张	北京	到	上海	12月	30日	的	机票
+v	r	v	m	q	ns	v	ns	nt	nt	u	n
+
+帮	我	订	一	张	北京	到	上海	12月	30日	的	机票
+v	r	v	m	q	ns	v	ns	nt	nt	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	下午	13时
+nt	nt	nt
+
+五	折	以下	的
+m	q	nd	u
+
+九折	以下	的
+n	nd	u
+
+明天	的	票
+nt	u	n
+
+九折	以下	的
+n	nd	u
+
+2017年	12月	30日	去	天津	的	机票
+nt	nt	nt	v	ns	u	n
+
+2017年	12月	30日	去	天津	的	机票
+nt	nt	nt	v	ns	u	n
+
+帮	我	订	一	张	12月	的	去	潍坊	的	机票
+v	r	v	m	q	nt	u	v	ns	u	n
+
+帮	我	订	一	张	下个月	的	机票
+v	r	v	m	q	nt	u	n
+
+去	上海	的
+v	ns	u
+
+帮	我	订	一	张	下	下个月	的	机票
+v	r	v	m	q	nd	nt	u	n
+
+帮	我	订	一	张	下	下个月	的	机票
+v	r	v	m	q	nd	nt	u	n
+
+2018年	的	机票
+nt	u	n
+
+下个月	去	天津	的	机票
+nt	v	ns	u	n
+
+八	折	以下	的
+m	q	nd	u
+
+帮	我	订	一	张	下个月	下	个	礼拜天	的	机票
+v	r	v	m	q	nt	nd	q	nt	u	n
+
+上海	虹桥机场
+ns	ns
+
+九折	以下	的
+n	nd	u
+
+帮	我	订	一	张	周五	到	天津	的	机票
+v	r	v	m	q	nt	v	ns	u	n
+
+八	折	以下	的
+m	q	nd	u
+
+低于	七折	的
+v	i	u
+
+低于	三折	的
+v	j	u
+
+低于	五折	的
+v	i	u
+
+over	’
+ws	wp
+
+帮	我	订	一	张	机票
+v	r	v	m	q	n
+
+下周一	飞	上海	的
+nt	v	ns	u
+
+7折	以下
+nt	nd
+
+六六	折	以下
+m	q	nd
+
+低于	五五	折	的	票
+v	m	q	u	n
+
+五五	折	以下
+m	q	nd
+
+帮	我	订	一	张	机票
+v	r	v	m	q	n
+
+周一	飞	上海	的
+nt	v	ns	u
+
+低于	五五	折	的
+v	m	q	u
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+周一
+nt
+
+周五
+nt
+
+周六
+nt
+
+周日
+nt
+
+周天
+nt
+
+周二
+nt
+
+周三
+nt
+
+下个月	一日	到	三日
+nt	nt	v	nt
+
+下个月	三日	到	五日
+nt	nt	v	nt
+
+北京
+ns
+
+下个月	三日
+nt	nt
+
+订	一	张	从	北京	到	上海	的	机票	，	不要	经济舱	，	不要	商务舱	，	要	公务舱	，	五	折	以下	的	，	周三	的
+v	m	q	p	ns	p	ns	u	n	wp	d	i	wp	d	n	wp	v	n	wp	m	q	nd	u	wp	nt	u
+
+订	一	张	从	北京	到	上海	的	机票	，	不要	经济舱	，	不要	商务舱	，	五	折	以下	的	，	周三	的
+v	m	q	p	ns	p	ns	u	n	wp	d	i	wp	d	n	wp	m	q	nd	u	wp	nt	u
+
+周二	的
+nt	u
+
+订	一	张	从	北京	到	上海	的	机票	，	不要	经济舱	，	不要	商务舱	，	五	折	以下	的	，	周三	到	周四
+v	m	q	p	ns	p	ns	u	n	wp	d	i	wp	d	n	wp	m	q	nd	u	wp	nt	v	nt
+
+周四
+nt
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	五	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	五	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+
+
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	五	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出
+v	r	v	m	q	ns	v	ns	u	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+不要	公务舱
+d	n
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	5	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	5	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	虹桥机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	n
+
+B	的
+ws	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	不要	M	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	d	ws	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	低于	七折	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	v	i	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	七	折	以下	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	m	q	nd	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	88	折	以下
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	m	q	nd
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	七	折	以下	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	m	q	nd	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	88	折	以下	的
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	m	q	nd	u
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	低于	八八折
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	v	n
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	从	首都机场	出发	，	不要	大飞机	，	要	B	的	，	低于	八八折
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	p	ns	v	wp	d	i	wp	v	ws	u	wp	v	n
+
+帮	我	订	一	张	北京	到	上海	的	机票	，	不要	公务舱	，	9	折	以下	的	，	100	块钱	到	3000	块	之间	的	，	明天	中午	，	首都机场	出发	，	不要	大飞机	，	要	B	的	，	低于	八八折
+v	r	v	m	q	ns	v	ns	u	n	wp	d	n	wp	m	q	nd	u	wp	m	q	v	m	q	nd	u	wp	nt	nt	wp	ns	v	wp	d	i	wp	v	ws	u	wp	v	n
+
+帮	我	订	一	张	明天	飞	上海	的	机票
+v	r	v	m	q	nt	v	ns	u	n
+
+订	一	张	明天	去	上海	的	机票	，	大后天	的
+v	m	q	nt	v	ns	u	n	wp	nt	u
+
+五	天	后	的
+m	q	nd	u
+
+五	天	以后
+m	q	nd
+
+20	小时	之后
+m	n	nd
+
+五	小时	之后
+m	n	nd
+
+十七	个	小时	之后
+m	q	n	nd
+
+帮	我	订	一	张	17	个	小时	之后	的	机票
+v	r	v	m	q	m	q	n	nd	u	n
+
+订	一	张	明天	去	上海	的	机票	，	大后天	的
+v	m	q	nt	v	ns	u	n	wp	nt	u
+
+五	天	后	的
+m	q	nd	u
+
+五时	以下
+nt	nd
+
+五时	以后
+nt	nd
+
+明天	的
+nt	u
+
+五时	以后
+nt	nd
+
+帮	我	订	一	张	五	小时	之后	的	机票
+v	r	v	m	q	m	n	nd	u	n
+
+六	个	小时	之后
+m	q	n	nd
+
+7	小时	之后	的
+m	n	nd	u
+
+八	小时	之后
+m	n	nd
+
+十七	小时	之后
+m	n	nd
+
+帮	我	订	一	张	十七	个	小时	之后	的	机票
+v	r	v	m	q	m	q	n	nd	u	n
+
+十六	小时
+m	n
+
+十六	小时	之后	的
+m	n	nd	u
+
+十五	小时	之后	的
+m	n	nd	u
+
+十四	小时	之后	的
+m	n	nd	u
+
+十三	小时	之后	的
+m	n	nd	u
+
+十三	时	之后
+m	n	nd
+
+十三	时	之后
+m	n	nd
+
+十四	时	之后
+m	n	nd
+
+北京
+ns
+
+一千五百	块	钱	以下
+m	q	n	nd
+
+两千	块	钱	以下
+m	q	n	nd
+
+overr
+ws
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+五	天	后
+m	q	nd
+
+两千	块	以下	的	机票
+m	q	nd	u	n
+
+一千	块	以下
+m	q	nd
+
+五百	块	以下
+m	q	nd
+
+3000	块	以下
+m	q	nd
+
+价格	最低	的
+n	a	u
+
+最	便宜	的
+d	a	u
+
+最	贵	的
+d	a	u
+
+25时	之后
+nt	nd
+
+重新	查询
+d	v
+
+订	一	张	天津	到	广州	的	机票	，	不要	经济舱	，	不要	商务舱	，	3	个	小时	之后
+v	m	q	ns	v	ns	u	n	wp	d	i	wp	d	n	wp	m	q	n	nd
+
+重新	查询
+d	v
+
+重来
+nh
+
+重查
+v
+
+帮	我	订	一	张	北京市	到	上海市	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	中午
+nt	nt
+
+帮	我	订	一	张	北京市	到	上海市	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	中午
+nt	nt
+
+北京	到	长春市	的	机票
+ns	v	ns	u	n
+
+虹桥
+ns
+
+北京	到	山东省	的	二级片
+ns	v	ns	u	n
+
+订	一	张	从	上海	虹桥	到	天津	的	机票
+v	m	q	p	ns	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	南苑	到	上海	的	机票
+v	r	v	m	q	ns	ns	v	ns	u	n
+
+明天	中午
+nt	nt
+
+从	北京	首都机场	到	上海	虹桥
+p	ns	ns	v	ns	ns
+
+北京	虹桥机场	到	天津	的	机票
+ns	ns	v	ns	u	n
+
+明天	中午
+nt	nt
+
+帮	我	订	一	张	北京市	到	天津	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+下个星期二
+nt
+
+帮	我	订	一	张	北京市	到	上海	虹桥	的	机票
+v	r	v	m	q	ns	v	ns	ns	u	n
+
+下个星期二
+nt
+
+北京	首都机场	到	长春市	的	机票
+ns	ns	v	ns	u	n
+
+下	个	礼拜二
+nd	q	n
+
+下星期	以
+nt	p
+
+下星期一	飞	上海	的	机票
+nt	v	ns	u	n
+
+下周二
+nt
+
+下	个	周二
+nd	q	nt
+
+下个星期
+nt
+
+2018年	十二月	到	天津	的	机票
+nt	nt	v	ns	u	n
+
+2018年	一月	飞	上海	的	机票
+nt	nt	v	ns	u	n
+
+不要	经济舱	不	要	海航	的	不	要	国航	的	7	七	折	以下	的	机票
+d	n	d	v	nh	u	d	v	nh	u	m	m	q	nd	u	n
+
+国航	的	飞机
+nh	u	n
+
+不要	经济舱	7	七	折	以下	的	机票	2018年	一月	飞	上海	的	机票
+d	n	m	m	q	nd	u	n	nt	nt	v	ns	u	n
+
+不要	经济舱	不	要	海航	的	不	要	国航	7	七	折	以下	的	机票	2018年	一月	飞	上海	的	机票
+d	n	d	v	nh	u	d	v	nh	m	m	q	nd	u	n	nt	nt	v	ns	u	n
+
+国航	的
+nh	u
+
+不	要	国航	的
+d	v	nh	u
+
+不要	经济舱	不	要	海航	的	不	要	国航	7	七	折	以下	的	机票	2018年	一月	飞	上海	的	机票
+d	n	d	v	nh	u	d	v	nh	m	m	q	nd	u	n	nt	nt	v	ns	u	n
+
+国航	的
+nh	u
+
+不	要	国航	的
+d	v	nh	u
+
+国航	的
+nh	u
+
+帮	我	订	两	张	北京市	飞	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+帮	我	买	两	张	北京市	飞	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+不	要	国航	的	不要	川航	的	，	下个月	二日
+d	v	nh	u	d	nh	u	wp	nt	nt
+
+不要	吉祥航空	，	不要	南航	，	不要	联航	的
+d	nh	wp	d	nh	wp	d	nh	u
+
+不要	海航	，	不要	山航	，	不要	东航
+d	nh	wp	d	nh	wp	d	nh
+
+不要	联合航空
+d	nh
+
+不要	厦门航空
+d	nh
+
+不要	深航	，	不要	上海航空
+d	nh	wp	d	nh
+
+不要	深航
+d	nh
+
+不要	西藏航空	，	不要	华夏航空
+d	nh	wp	d	nh
+
+你好	，	机票	精灵
+i	wp	n	n
+
+你好	，	我	是	机票	精灵
+i	wp	r	v	n	n
+
+国航
+nh
+
+经济舱
+n
+
+不	要	国航
+d	v	nh
+
+明天	飞	上海
+nt	v	ns
+
+不	筛选	了
+d	v	u
+
+你好	，	机票	精灵
+i	wp	n	n
+
+国航
+nh
+
+国航
+nh
+
+国航
+nh
+
+国航
+nh
+
+明天	上午	九时
+nt	nt	nt
+
+国航
+nh
+
+国航
+nh
+
+经济舱
+n
+
+水壶
+n
+
+水壶
+n
+
+水壶
+n
+
+重新	订票
+d	v
+
+重新	查询
+d	v
+
+水壶
+n
+
+后天	早上	两	张	去	上海	的	头等舱
+nt	nt	m	q	v	ns	u	n
+
+大后天	上午	飞	上海
+nt	nt	v	ns
+
+最	早	的	那	班
+d	a	u	r	q
+
+我	不	去	上海	了	，	去	北京
+r	d	v	ns	u	wp	v	ns
+
+18日	上午	到	北京	的	头等舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+18日	上午	到	北京	的	经济舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+你	是	谁
+r	v	r
+
+18日	上午	到	北京	的	经济舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+你	能	干	啥
+r	v	v	r
+
+18日	上午	到	北京	的	经济舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+有	没	有	一千	块	钱	以下	的
+v	d	v	m	q	n	nd	u
+
+有	没	有	一千	五	以下	的
+v	d	v	m	m	nd	u
+
+18日	上午	到	北京	的	经济舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+有	没	有	1500	以下	的
+v	d	v	m	nd	u
+
+18日	上午	到	北京	的	经济舱	，	给	我	买	两	张	，	不	要	国航	的
+nt	nt	v	ns	u	n	wp	p	r	v	m	q	wp	d	v	nh	u
+
+有	没	有	1500	块钱	以下	的
+v	d	v	m	q	nd	u
+
+最	便宜	的
+d	a	u
+
+不要	大飞机
+d	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	下午
+nt	nt
+
+不要	头等舱
+d	n
+
+不要	经济舱
+d	n
+
+不要	公务舱	，	不要	商务舱	，	不要	高端	经济舱
+d	n	wp	d	n	wp	d	a	n
+
+国航	的
+nh	u
+
+不	要	国航	的
+d	v	nh	u
+
+B	的
+ws	u
+
+不要	B	的
+d	ws	u
+
+重来
+nh
+
+国航	的
+nh	u
+
+不	要	国航	的
+d	v	nh	u
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天	上午
+nt	nt
+
+3300	以下	的
+m	nd	u
+
+一千	到	三千	之间
+m	v	m	nd
+
+低于	三千
+v	m
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天
+nt
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天
+nt
+
+订	一	张	明天	北京	到	上海	的	机票
+v	m	q	nt	ns	v	ns	u	n
+
+订	一	张	明天	北京	到	上海	的	机票
+v	m	q	nt	ns	v	ns	u	n
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天
+nt
+
+帮	我
+v	r
+
+帮	我	订	一	张	机票
+v	r	v	m	q	n
+
+明天	下午	到	天津	的
+nt	nt	v	ns	u
+
+帮	我	订	一	张	北京	到	上海	的	机票
+v	r	v	m	q	ns	v	ns	u	n
+
+明天
+nt
+
+更改
+v
+
+海航
+nh
+
+你好
+i
+
+12月	23日	北京	到	上海
+nt	nt	ns	v	ns
+
+不要	经济舱
+d	n
+
+12月	23日	北京	到	上海
+nt	nt	ns	v	ns
+
+不要	经济舱
+d	n
+
+北京	到	上海	的	机票
+ns	v	ns	u	n
+
+重新	开始
+d	v
+
+北京	到	上海	的	机票
+ns	v	ns	u	n
+
+明天
+nt
+
+你好
+i
+
+北航	到	上海	的	机票
+j	v	ns	u	n
+
+明天	的
+nt	u
+
+北京	到	上海	的	机票
+ns	v	ns	u	n
+
+北京	到	上海	的	机票
+ns	v	ns	u	n
+
+你好
+i
+
+你好
+i
+
+北京	到	上海	的	机票
+ns	v	ns	u	n
+

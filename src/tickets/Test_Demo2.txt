@@ -1,0 +1,172 @@
+文档说明(时间：2017-12-10)：
+	=> 表示用户输入
+	>  表示回答
+	参数： 表示已知参数。(其中对于机型，舱位等，为空表示没有限制；state，topic为辅助；)
+	时间格式: [年，月，日，时]
+
+=============== 测试 1 =====================
+你好，我是机票精灵。
+=> 今天天气怎么样
+当日总的航班数: 0
+满足条件航班数: 0
+航班信息1: {}
+>> 地点1:广州 | 票数:1 | state:0 | topic:None |
+sorry,我不太懂您说的，请您说一些订票相关的问题吧
+=> 上海天气怎么样
+当日总的航班数: 0
+满足条件航班数: 0
+航班信息1: {}
+>> 地点1:广州 | 票数:1 | state:0 | topic:None |
+对不起,来聊点具体订票的事
+我能为您提供订票服务
+=> 今天上海天气怎么样
+当日总的航班数: 0
+满足条件航班数: 0
+航班信息1: {}
+>> 地点1:广州 | 票数:1 | state:0 | topic:None |
+对不起,来聊点具体订票的事
+=> 明天飞上海的机票
+当日总的航班数: 158
+满足条件航班数: 158
+航班信息1: [{'arr': 'SHA', 'stopCityCode': '', 'carrier': 'CZ', 'codeShare': True, 'bfBarePrice': 0.0, 'stopAirportName': '', 'arf': 50, 'arrTerminal': 'T2', 'meal': True, 'flightTimes': '2小时20分钟', 'price': 0.0, 'stopsNum': 0, 'dptTime': '10:30', 'planetype': '73E', 'dptAirport': '白云机场', 'barePrice': 1314.0, 'arrAirport': '虹桥机场', 'bfPrice': 0.0, 'tof': 0, 'flightNum': 'CZ9354', 'dpt': 'CAN', 'discount': 9.7, 'actFlightNum': 'MU5302', 'stopAirportFullName': '', 'dptTerminal': '', 'stopCityName': '', 'cabin': 'B', 'arrTime': '12:50', 'tag': 'OPL5', 'flightQuotePrices': None, 'bfTag': '', 'stopAirportCode': '', 'stop': False, 'distance': '1308', 'flightTypeFullName': '波音737(中)', 'minVppr': 0.0}]
+>> 时间1:[2017, 12, 11, 0] | 时间2:[2017, 12, 11, 23] | 地点1:广州 | 地点2:上海 | 票数:1 | state:2 | topic:search |
+已经为您查到这些机票信息
+请告诉我进一步筛选的条件
+=> 十点到十一点之间
+当日总的航班数: 158
+满足条件航班数: 14
+航班信息1: [{'arr': 'SHA', 'stopCityCode': '', 'carrier': 'CZ', 'codeShare': True, 'bfBarePrice': 0.0, 'stopAirportName': '', 'arf': 50, 'arrTerminal': 'T2', 'meal': True, 'flightTimes': '2小时20分钟', 'price': 0.0, 'stopsNum': 0, 'dptTime': '10:30', 'planetype': '73E', 'dptAirport': '白云机场', 'barePrice': 1314.0, 'arrAirport': '虹桥机场', 'bfPrice': 0.0, 'tof': 0, 'flightNum': 'CZ9354', 'dpt': 'CAN', 'discount': 9.7, 'actFlightNum': 'MU5302', 'stopAirportFullName': '', 'dptTerminal': '', 'stopCityName': '', 'cabin': 'B', 'arrTime': '12:50', 'tag': 'OPL5', 'flightQuotePrices': None, 'bfTag': '', 'stopAirportCode': '', 'stop': False, 'distance': '1308', 'flightTypeFullName': '波音737(中)', 'minVppr': 0.0}]
+>> 时间1:[2017, 12, 11, 10] | 时间2:[2017, 12, 11, 11] | 地点1:广州 | 地点2:上海 | 票数:1 | state:2 | topic:search |
+现在,为您查询到以下结果
+请告诉我进一步筛选的条件
+=> 坐波音的飞机
+当日总的航班数: 158
+满足条件航班数: 4
+航班信息1: [{'arr': 'SHA', 'stopCityCode': '', 'carrier': 'CZ', 'codeShare': True, 'bfBarePrice': 0.0, 'stopAirportName': '', 'arf': 50, 'arrTerminal': 'T2', 'meal': True, 'flightTimes': '2小时20分钟', 'price': 0.0, 'stopsNum': 0, 'dptTime': '10:30', 'planetype': '73E', 'dptAirport': '白云机场', 'barePrice': 1314.0, 'arrAirport': '虹桥机场', 'bfPrice': 0.0, 'tof': 0, 'flightNum': 'CZ9354', 'dpt': 'CAN', 'discount': 9.7, 'actFlightNum': 'MU5302', 'stopAirportFullName': '', 'dptTerminal': '', 'stopCityName': '', 'cabin': 'B', 'arrTime': '12:50', 'tag': 'OPL5', 'flightQuotePrices': None, 'bfTag': '', 'stopAirportCode': '', 'stop': False, 'distance': '1308', 'flightTypeFullName': '波音737(中)', 'minVppr': 0.0}]
+>> 时间1:[2017, 12, 11, 10] | 时间2:[2017, 12, 11, 11] | 地点1:广州 | 地点2:上海 | 票数:1 | 机型:{'波音738(中)', '波音747(宽)', '波音757(宽)', '波音767(宽)', '波音777(宽)', '波音787(宽)', '波音737(中)'} | state:2 | topic:search |
+有以下机票供您选择
+请说一下您的筛选要求
+=> 最早的一班
+当日总的航班数: 158
+满足条件航班数: 4
+航班信息1: [{'arr': 'SHA', 'stopCityCode': '', 'carrier': 'CZ', 'codeShare': True, 'bfBarePrice': 0.0, 'stopAirportName': '', 'arf': 50, 'arrTerminal': 'T2', 'meal': True, 'flightTimes': '2小时20分钟', 'price': 0.0, 'stopsNum': 0, 'dptTime': '10:30', 'planetype': '73E', 'dptAirport': '白云机场', 'barePrice': 1314.0, 'arrAirport': '虹桥机场', 'bfPrice': 0.0, 'tof': 0, 'flightNum': 'CZ9354', 'dpt': 'CAN', 'discount': 9.7, 'actFlightNum': 'MU5302', 'stopAirportFullName': '', 'dptTerminal': '', 'stopCityName': '', 'cabin': 'B', 'arrTime': '12:50', 'tag': 'OPL5', 'flightQuotePrices': None, 'bfTag': '', 'stopAirportCode': '', 'stop': False, 'distance': '1308', 'flightTypeFullName': '波音737(中)', 'minVppr': 0.0}]
+>> 时间1:[2017, 12, 11, 10] | 时间2:[2017, 12, 11, 11] | 地点1:广州 | 地点2:上海 | 票数:1 | 时间标记:True | 机型:{'波音738(中)', '波音747(宽)', '波音757(宽)', '波音767(宽)', '波音777(宽)', '波音787(宽)', '波音737(中)'} | state:2 | topic:search |
+已经为您查到这些机票信息
+请告诉我进一步筛选的条件
+=> 最晚的
+something error
+
+[已解决]：数据格式问题list(reversed(nums))
+=========== 测试 2 =================[Problem: 怎么算是订票相关？]
+你好，我是机票精灵。
+=> 你都能干什么
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 地点1:广州 | 票数:1 | state:0 | topic:None |
+不好意思,我没听懂,请说点订票相关的事吧
+=> 下周一到广州的飞机票
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 时间1:[2017, 12, 11, 0] | 时间2:[2017, 12, 11, 23] | 地点1:广州 | 地点2:广州 | 票数:1 | state:0 | topic:None |
+抱歉，出发地和目的地相同。
+=> 从上海出发
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 时间1:[2017, 12, 11, 0] | 时间2:[2017, 12, 11, 23] | 地点1:广州 | 地点2:广州 | 票数:1 | state:0 | topic:None |
+对不起,来聊点具体订票的事
+=========== 测试 3 =================
+你好，我是机票精灵。
+=> 帮我订张票
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 地点1:广州 | 票数:1 | state:1 | topic:sTime |
+您想要什么时间的票
+=> 下个月三号
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 时间1:[2018, 1, 3, 0] | 时间2:[2018, 1, 3, 23] | 地点1:广州 | 票数:1 | state:1 | topic:dCity |
+请问您想去哪里呢
+=> 北京虹桥机场
+当日总的航班数: 83	满足条件航班数: 83
+航班信息1: [{'price': 0.0, 'flightNum': 'CZ9354', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'CZ', 'tof': 0, 'arrAirport': '虹桥机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'V', 'distance': '1308', 'actFlightNum': 'MU5302', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '12:50', 'planetype': '73E', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '10:30', 'barePrice': 572.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 4.2, 'flightTypeFullName': '波音737(中)', 'stopCityName': '', 'arr': 'SHA', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 0] | 时间2:[2018, 1, 3, 23] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | state:2 | topic:search |
+查询结果如下
+如需筛选，请告诉我您的要求
+=> 十点到下午一点之间
+当日总的航班数: 83	满足条件航班数: 20
+航班信息1: [{'price': 0.0, 'flightNum': 'CZ9354', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'CZ', 'tof': 0, 'arrAirport': '虹桥机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'V', 'distance': '1308', 'actFlightNum': 'MU5302', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '12:50', 'planetype': '73E', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '10:30', 'barePrice': 572.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 4.2, 'flightTypeFullName': '波音737(中)', 'stopCityName': '', 'arr': 'SHA', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 10] | 时间2:[2018, 1, 3, 13] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | state:2 | topic:search |
+您有以下几种票可选
+请说一下您的筛选要求
+=> 下午一点到晚上十点之间
+当日总的航班数: 83	满足条件航班数: 47
+航班信息1: [{'price': 0.0, 'flightNum': 'MU9314', 'bfTag': '', 'flightTimes': '2小时15分钟', 'carrier': 'MU', 'tof': 0, 'arrAirport': '虹桥机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'S', 'distance': '1308', 'actFlightNum': 'FM9314', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '15:50', 'planetype': '73L', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '13:35', 'barePrice': 648.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 4.8, 'flightTypeFullName': '波音737(中)', 'stopCityName': '', 'arr': 'SHA', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | state:2 | topic:search |
+现在，已经有了这些信息
+如需筛选，请告诉我您的要求
+=> 最早一班飞机
+当日总的航班数: 83	满足条件航班数: 47
+航班信息1: [{'price': 0.0, 'flightNum': 'MF1357', 'bfTag': '', 'flightTimes': '2小时10分钟', 'carrier': 'MF', 'tof': 0, 'arrAirport': '虹桥机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'L', 'distance': '1308', 'actFlightNum': 'CZ3525', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '15:10', 'planetype': '332', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '13:00', 'barePrice': 852.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 6.3, 'flightTypeFullName': '空客330(宽)', 'stopCityName': '', 'arr': 'SHA', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | 时间标记:True | state:2 | topic:search |
+有如下机票信息
+请告诉我您的筛选条件
+=> 最晚一班
+当日总的航班数: 83	满足条件航班数: 47
+航班信息1: [{'price': 0.0, 'flightNum': 'MU3582', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'MU', 'tof': 0, 'arrAirport': '浦东机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'L', 'distance': '1308', 'actFlightNum': 'CZ3586', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '00:20', 'planetype': '32G', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '22:00', 'barePrice': 848.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 6.3, 'flightTypeFullName': '空客320(中)', 'stopCityName': '', 'arr': 'PVG', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | 时间标记:False | state:2 | topic:search |
+现在,为您查询到以下结果
+请告诉我进一步筛选的条件
+=> 不要国航的飞机
+当日总的航班数: 83	满足条件航班数: 47
+航班信息1: [{'price': 0.0, 'flightNum': 'MU3582', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'MU', 'tof': 0, 'arrAirport': '浦东机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'L', 'distance': '1308', 'actFlightNum': 'CZ3586', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '00:20', 'planetype': '32G', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '22:00', 'barePrice': 848.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 6.3, 'flightTypeFullName': '空客320(中)', 'stopCityName': '', 'arr': 'PVG', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | 时间标记:False | 公司:{'EU', 'HU', 'MU', 'FM', 'CA', 'ZH', 'HO', '9C', 'CN', '3U', 'TV', 'BK', 'CZ', 'SC', 'G5', 'KN', '8L', 'PN', 'MF', 'JR', 'GJ'} | state:2 | topic:search |
+已经为您查到这些机票信息
+请告诉我进一步筛选的条件
+=> 不要大飞机
+当日总的航班数: 83	满足条件航班数: 24
+航班信息1: [{'price': 0.0, 'flightNum': 'MU3582', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'MU', 'tof': 0, 'arrAirport': '浦东机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'L', 'distance': '1308', 'actFlightNum': 'CZ3586', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '00:20', 'planetype': '32G', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '22:00', 'barePrice': 848.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 6.3, 'flightTypeFullName': '空客320(中)', 'stopCityName': '', 'arr': 'PVG', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | 时间标记:False | 公司:{'EU', 'HU', 'MU', 'FM', 'CA', 'ZH', 'HO', '9C', 'CN', '3U', 'TV', 'BK', 'CZ', 'SC', 'G5', 'KN', '8L', 'PN', 'MF', 'JR', 'GJ'} | 机型:{'麦道82(中)', '波音737(中)', '麦道90(中)', '波音738(中)', '空客320(中)'} | state:2 | topic:search |
+查询结果如下
+如需筛选，请告诉我您的要求
+=> 麦道的
+当日总的航班数: 83	满足条件航班数: 47
+航班信息1: [{'price': 0.0, 'flightNum': 'MU3582', 'bfTag': '', 'flightTimes': '2小时20分钟', 'carrier': 'MU', 'tof': 0, 'arrAirport': '浦东机场', 'flightQuotePrices': None, 'bfPrice': 0.0, 'dptTerminal': '', 'cabin': 'L', 'distance': '1308', 'actFlightNum': 'CZ3586', 'minVppr': 0.0, 'stopsNum': 0, 'stopCityCode': '', 'stop': False, 'arrTime': '00:20', 'planetype': '32G', 'stopAirportCode': '', 'stopAirportFullName': '', 'arf': 50, 'bfBarePrice': 0.0, 'codeShare': True, 'dptTime': '22:00', 'barePrice': 848.0, 'arrTerminal': 'T2', 'meal': True, 'dpt': 'CAN', 'discount': 6.3, 'flightTypeFullName': '空客320(中)', 'stopCityName': '', 'arr': 'PVG', 'dptAirport': '白云机场', 'tag': 'OPL5', 'stopAirportName': ''}]
+>> 时间1:[2018, 1, 3, 13] | 时间2:[2018, 1, 3, 22] | 地点1:广州 | 地点2:虹桥机场 | 票数:1 | 时间标记:False | 公司:{'EU', 'HU', 'MU', 'FM', 'CA', 'ZH', 'HO', '9C', 'CN', '3U', 'TV', 'BK', 'CZ', 'SC', 'G5', 'KN', '8L', 'PN', 'MF', 'JR', 'GJ'} | 机型:set() | state:2 | topic:search |
+现在，已经有了这些信息
+如需筛选，请告诉我您的要求
+=> over
+=========== 测试 4 ================= 查询条件如何收窄
+你好，我是机票精灵。
+=> 明天上午从北京到天津的机票
+当日总的航班数: 0	满足条件航班数: 0
+航班信息1: {}
+>> 时间1:[2017, 12, 11, 5] | 时间2:[2017, 12, 11, 12] | 地点1:北京 | 地点2:天津 | 票数:1 | state:2 | topic:search |
+暂时不支持查询到天津飞机航线
+=> 上海
+当日总的航班数: 407	满足条件航班数: 148
+航班信息1: [{'dptAirport': '首都机场', 'tof': 0, 'flightNum': 'CA3202', 'bfTag': '', 'flightTimes': '2小时15分钟', 'arrAirport': '虹桥机场', 'carrier': 'CA', 'price': 0.0, 'codeShare': True, 'planetype': '321', 'arrTerminal': 'T2', 'cabin': 'V', 'distance': '1178', 'actFlightNum': 'HO1252', 'minVppr': 0.0, 'stopAirportFullName': '', 'stopCityCode': '', 'stop': False, 'stopAirportCode': '', 'meal': True, 'stopsNum': 0, 'tag': 'OPL5', 'bfBarePrice': 0.0, 'bfPrice': 0.0, 'dptTime': '06:35', 'dpt': 'PEK', 'barePrice': 761.0, 'dptTerminal': '', 'flightQuotePrices': None, 'discount': 6.1, 'flightTypeFullName': '空客321(中)', 'stopCityName': '', 'arr': 'SHA', 'arrTime': '08:50', 'arf': 50, 'stopAirportName': ''}]
+>> 时间1:[2017, 12, 11, 5] | 时间2:[2017, 12, 11, 12] | 地点1:北京 | 地点2:上海 | 票数:1 | state:2 | topic:search |
+您有以下几种票可选
+请说一下您的筛选要求
+=> 不要大飞机
+当日总的航班数: 407	满足条件航班数: 28
+航班信息1: [{'dptAirport': '首都机场', 'tof': 0, 'flightNum': 'FM9108', 'bfTag': '', 'flightTimes': '2小时20分钟', 'arrAirport': '虹桥机场', 'carrier': 'FM', 'price': 0.0, 'codeShare': False, 'planetype': '73E', 'arrTerminal': 'T2', 'cabin': 'Y', 'distance': '1178', 'actFlightNum': 'FM9108', 'minVppr': 0.0, 'stopAirportFullName': '', 'stopCityCode': '', 'stop': False, 'stopAirportCode': '', 'meal': True, 'stopsNum': 0, 'tag': 'OPL5', 'bfBarePrice': 0.0, 'bfPrice': 0.0, 'dptTime': '08:30', 'dpt': 'PEK', 'barePrice': 1219.0, 'dptTerminal': '', 'flightQuotePrices': None, 'discount': 9.8, 'flightTypeFullName': '波音737(中)', 'stopCityName': '', 'arr': 'SHA', 'arrTime': '10:50', 'arf': 50, 'stopAirportName': ''}]
+>> 时间1:[2017, 12, 11, 5] | 时间2:[2017, 12, 11, 12] | 地点1:北京 | 地点2:上海 | 票数:1 | 机型:{'737', 'K320', 'B737', 'M82', 'B738', 'M90', '738'} | state:2 | topic:search |
+现在,为您查询到以下结果
+请告诉我进一步筛选的条件
+=> 麦道的
+当日总的航班数: 407	满足条件航班数: 0
+航班信息1: {}
+>> 时间1:[2017, 12, 11, 5] | 时间2:[2017, 12, 11, 12] | 地点1:北京 | 地点2:上海 | 票数:1 | 机型:{'M90', 'M82'} | state:2 | topic:search |
+暂无航班供您选择
+你可以选择重新订票
+=> 要波音的
+当日总的航班数: 407	满足条件航班数: 148
+航班信息1: [{'dptAirport': '首都机场', 'tof': 0, 'flightNum': 'CA3202', 'bfTag': '', 'flightTimes': '2小时15分钟', 'arrAirport': '虹桥机场', 'carrier': 'CA', 'price': 0.0, 'codeShare': True, 'planetype': '321', 'arrTerminal': 'T2', 'cabin': 'V', 'distance': '1178', 'actFlightNum': 'HO1252', 'minVppr': 0.0, 'stopAirportFullName': '', 'stopCityCode': '', 'stop': False, 'stopAirportCode': '', 'meal': True, 'stopsNum': 0, 'tag': 'OPL5', 'bfBarePrice': 0.0, 'bfPrice': 0.0, 'dptTime': '06:35', 'dpt': 'PEK', 'barePrice': 761.0, 'dptTerminal': '', 'flightQuotePrices': None, 'discount': 6.1, 'flightTypeFullName': '空客321(中)', 'stopCityName': '', 'arr': 'SHA', 'arrTime': '08:50', 'arf': 50, 'stopAirportName': ''}]
+>> 时间1:[2017, 12, 11, 5] | 时间2:[2017, 12, 11, 12] | 地点1:北京 | 地点2:上海 | 票数:1 | 机型:set() | state:2 | topic:search |
+查询结果如下
+如需筛选，请告诉我您的要求
+=> over
+=========== 测试 5 =================
+
+

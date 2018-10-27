@@ -1,0 +1,4 @@
+#! /bin/sh
+
+ssh -f spurs@192.168.2.153 -L 9999:localhost:8888 -N
+
